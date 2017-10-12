@@ -1,0 +1,84 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="reg.css">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+<div class="container">
+    <h1 class="well">Post a Problem</h1>
+	<div class="col-lg-12 well">
+	<div class="row">
+				<form method="POST" action="createnewpostdb.php" enctype="multipart/form-data">
+					<div class="col-sm-12">
+						<div class="row">
+							
+							<div class="col-sm-6 form-group">
+							
+
+								<label>Title</label>
+								<input type="text" placeholder="Enter Title Here.." class="form-control" name="title">
+							</div>
+						
+						</div>					
+					    <br>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea placeholder="Enter Description Here.." rows="3" class="form-control" name="description"></textarea>
+						</div>	
+						
+						<br>						
+					<div class="form-group">
+						<label for="sel1">Select Location</label>
+      <select name="location" class="form-control" id="sel1">
+        <option>Aundh</option>
+        <option>Deccan</option>
+        <option>Katraj</option>
+        <option>Khadki</option>
+        <option>Kothrud</option>        
+        <option>Laxmi Road</option>
+        <option>Pimpri Chinchwad</option>
+        <option>Swargate</option>
+        <option>Viman Nagar</option>
+        <option>Warje</option>                                      
+      </select>
+					</div>
+<div class="form-group">
+      <label for="sel1">Select Problem Category</label>
+      <select name="type" class="form-control" id="sel1">
+        <option>Cleanliness</option>
+        <option>Drainage</option>
+        <option>Electricity</option>        
+        <option>Lighting</option>
+        <option>Logging</option>
+        <option>Roads</option>        
+        <option>Water Supply</option>
+        <option>Other</option>        
+      </select>
+            
+    </div>					
+					<br>
+					
+					<div class="">
+						<label>Upload Image</label>
+						<input type="file" class="" name="image" id="image">
+					</div>		
+					<br>
+					<center><button type="submit" class="btn btn-success">Submit</button></center>									
+						
+					</div>
+				</form> 
+				</div>
+	</div>
+	</div>
+
+
+</body>
+</html>
